@@ -1,0 +1,80 @@
+{
+    "USN" : "1DS20ET102", 
+    "student_name" : "Bill", 
+    "Gender" : "Male", 
+    "Entry_type": "Normal",
+    "YOA": 2018, 
+    "migrated": 0,
+    "Details_of_migration": "None", 
+    "admission_in_separate_division": 0,
+    "adDetails" : "None",
+    "YOP": 2022, 
+    "degree_type": "UG",
+    "pu_marks": 537, 
+    "entrance_marks": 155
+}
+
+
+{
+    "USN" : "1DS20ET103", 
+    "student_name" : "Rick", 
+    "Gender" : "Male", 
+    "Entry_type": "Normal",
+    "YOA": 2017, 
+    "migrated": 0,
+    "Details_of_migration": "None", 
+    "admission_in_separate_division": 0,
+    "adDetails" : "None",
+    "YOP": 2021, 
+    "degree_type": "UG",
+    "pu_marks": 549, 
+    "entrance_marks": 80
+}
+
+{
+    "USN" : "1DS20ET104", 
+    "student_name" : "Roy", 
+    "Gender" : "Male", 
+    "Entry_type": "Normal",
+    "YOA": 2020, 
+    "migrated": 0,
+    "Details_of_migration": "None", 
+    "admission_in_separate_division": 0,
+    "adDetails" : "None",
+    "YOP": 2022, 
+    "degree_type": "PG",
+    "pu_marks": 595, 
+    "entrance_marks": 144
+}
+
+{
+    "USN" : "1DS20ET105", 
+    "student_name" : "Taylor", 
+    "Gender" : "Female", 
+    "Entry_type": "Normal",
+    "YOA": 2019, 
+    "migrated": 0,
+    "Details_of_migration": "None", 
+    "admission_in_separate_division": 0,
+    "adDetails" : "None",
+    "YOP": 2023, 
+    "degree_type": "UG",
+    "pu_marks": 574, 
+    "entrance_marks": 179
+}
+
+{
+    "USN" : "1DS20ET106", 
+    "student_name" : "Kim", 
+    "Gender" : "Male", 
+    "Entry_type": "Normal",
+    "YOA": 2016, 
+    "migrated": 0,
+    "Details_of_migration": "None", 
+    "admission_in_separate_division": 0,
+    "adDetails" : "None",
+    "YOP": 2020, 
+    "degree_type": "UG",
+    "pu_marks": 489, 
+    "entrance_marks": 55
+}
