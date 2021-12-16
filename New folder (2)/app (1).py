@@ -26,8 +26,7 @@ data = db.Table(
    db.Column('pu_marks', db.Integer),
    db.Column('entrance_marks', db.Integer),
 )
-
-db.create_all()
+meta.create_all(db.engine)
 
 def create(body):
     conn = db.engine
@@ -44,15 +43,20 @@ def create(body):
     sDegreeType = str(body['degree_type'])
     sPuMarks = int(body['pu_marks'])
     sEntranceExams = str(body['entrance_marks'])
-    db.engine.execute(data.insert(),[
+    entry = db.engine.execute(data.insert(),[
             {'USN' : sUSN, 'student_name' : sName, 'Gender' : sGender, 'Entry_type': sEntry_type,'YOA': sYearOfAdmission, 'migrated': sMigrated,
              'Details_of_migration': sDetails, 'admission_in_separate_division': sadmissionInSepDiv,'adDetails': admissionDetails ,'YOP': sYop, 'degree_type': sDegreeType,
              'pu_marks': sPuMarks, 'entrance_marks': sEntranceExams}
         ])
-    query = db.Query.get(-1)
-    if query == sUSN:
-        db.session.commit()
-        return "Added successfully"
+    result = db.engine.execute('SELECT * FROM College WHERE USN = :val', {'val' : sUSN})               #:val mathod protects ours code from SQL Injection attacks
+    db.session.commit()
+    for r in result:
+        r_dict = dict(r.items())
+        print(r_dict)
+        if r_dict['USN'] == sUSN:
+            return "Added successfully" 
+        else: 
+            return "Not Saved"
     
 
 def read():
